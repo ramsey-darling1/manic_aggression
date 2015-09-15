@@ -1,0 +1,62 @@
+//styles for manic aggression site
+// opps, file should have been MA not MS. not going to bother fixing it though. lol 
+//@rdarling42
+
+@mixin hover_div(){
+    height:1rem;
+    width:100%;
+    background-size: cover;
+    transition: all 1s ease;
+    &:hover {
+        height:26rem; 
+    }
+}
+
+@font-face {
+    font-family: 'belligerent_madnessregular';
+    src: url('../fonts/belligerent-webfont.eot');
+    src: url('../fonts/belligerent-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/belligerent-webfont.woff2') format('woff2'),
+    url('../fonts/belligerent-webfont.woff') format('woff'),
+    url('../fonts/belligerent-webfont.ttf') format('truetype'),
+    url('../fonts/belligerent-webfont.svg#belligerent_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    color: $white;
+    background: $black;
+}
+
+header.header {
+    text-align:center;
+    padding: 5rem 0;
+    h1{
+        font-family: 'belligerent_madnessregular';
+        text-transform:uppercase;
+        color: $white;
+    }
+}
+
+.ia1 {
+    background: url(../imgs/giphy3.gif) no-repeat;
+    @include hover_div();
+}
+
+.ia2 {
+    background: url(../imgs/giphy4.gif) no-repeat;
+    @include hover_div();
+}
+
+.info {
+    padding: 5rem 0;
+}
+
+footer {
+    padding: 5rem 0;
+    background: url(../imgs/dark-skull.jpg) no-repeat fixed;
+    background-size:cover;
+}
