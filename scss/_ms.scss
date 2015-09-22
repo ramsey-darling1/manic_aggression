@@ -25,6 +25,19 @@
 
 }
 
+@font-face {
+    font-family: 'hacjiuza_dirtyregular';
+    src: url('../fonts/hacjiuza_dirty-webfont.eot');
+    src: url('../fonts/hacjiuza_dirty-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/hacjiuza_dirty-webfont.woff2') format('woff2'),
+    url('../fonts/hacjiuza_dirty-webfont.woff') format('woff'),
+    url('../fonts/hacjiuza_dirty-webfont.ttf') format('truetype'),
+    url('../fonts/hacjiuza_dirty-webfont.svg#hacjiuza_dirtyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 body {
     color: $white;
@@ -35,9 +48,10 @@ header.header {
     text-align:center;
     padding: 5rem 0;
     h1{
-        font-family: 'belligerent_madnessregular';
+        font-family: 'hacjiuza_dirtyregular';
         text-transform:uppercase;
         color: $white;
+        font-size:4rem;
     }
 }
 
