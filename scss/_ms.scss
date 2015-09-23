@@ -38,6 +38,19 @@
 
 }
 
+@font-face {
+    font-family: 'crucifixionregular';
+    src: url('../fonts/crucifixion-regular-webfont.eot');
+    src: url('../fonts/crucifixion-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/crucifixion-regular-webfont.woff2') format('woff2'),
+    url('../fonts/crucifixion-regular-webfont.woff') format('woff'),
+    url('../fonts/crucifixion-regular-webfont.ttf') format('truetype'),
+    url('../fonts/crucifixion-regular-webfont.svg#crucifixionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 body {
     color: $white;
@@ -48,10 +61,13 @@ header.header {
     text-align:center;
     padding: 5rem 0;
     h1{
-        font-family: 'hacjiuza_dirtyregular';
+        font-family: 'crucifixionregular';
         text-transform:uppercase;
         color: $white;
         font-size:4rem;
+        &.short {
+            font-size:8rem;     
+        }
     }
 }
 
